@@ -67,6 +67,16 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout optionNine;
 
     int chance;
+    boolean one = false;
+    boolean two = false;
+    boolean three = false;
+    boolean four = false;
+    boolean five = false;
+    boolean six = false;
+    boolean seven = false;
+    boolean eight = false;
+    boolean nine = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,62 +88,78 @@ public class MainActivity extends AppCompatActivity {
         optionOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chance == 1)
-                    crossOne.setVisibility(View.VISIBLE);
-                else
-                    circleOne.setVisibility(View.VISIBLE);
-                chance = 1 - chance;
+                if (!one) {
+                    if (chance == 1)
+                        crossOne.setVisibility(View.VISIBLE);
+                    else
+                        circleOne.setVisibility(View.VISIBLE);
+                    chance = 1 - chance;
+                    one = true;
+                }
 
             }
         });
         optionTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chance == 1)
-                    crossTwo.setVisibility(View.VISIBLE);
-                else
-                    circleTwo.setVisibility(View.VISIBLE);
-                chance = 1 - chance;
+                if (!two) {
+                    if (chance == 1)
+                        crossTwo.setVisibility(View.VISIBLE);
+                    else
+                        circleTwo.setVisibility(View.VISIBLE);
+                    chance = 1 - chance;
+                    two = true;
+
+                }
             }
         });
 
         optionThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chance == 1)
-                    crossThree.setVisibility(View.VISIBLE);
-                else
-                    circleThree.setVisibility(View.VISIBLE);
-                chance = 1 - chance;
+                if (!three) {
+                    if (chance == 1)
+                        crossThree.setVisibility(View.VISIBLE);
+                    else
+                        circleThree.setVisibility(View.VISIBLE);
+                    chance = 1 - chance;
+                    three = true;
+                }
             }
         });
 
         optionFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chance == 1)
-                    crossFour.setVisibility(View.VISIBLE);
-                else
-                    circleFour.setVisibility(View.VISIBLE);
-                chance = 1 - chance;
+                if (!four) {
+                    if (chance == 1)
+                        crossFour.setVisibility(View.VISIBLE);
+                    else
+                        circleFour.setVisibility(View.VISIBLE);
+                    chance = 1 - chance;
+                    four = true;
+                }
             }
         });
 
         optionFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chance == 1)
-                    crossFive.setVisibility(View.VISIBLE);
-                else
-                    circleFive.setVisibility(View.VISIBLE);
-                chance = 1 - chance;
+                if(!five) {
+                    if (chance == 1)
+                        crossFive.setVisibility(View.VISIBLE);
+                    else
+                        circleFive.setVisibility(View.VISIBLE);
+                    chance = 1 - chance;
+                    five =true;
+                }
             }
         });
 
         optionSix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chance == 1)
+                if (chance == 1)
                     crossSix.setVisibility(View.VISIBLE);
                 else
                     circleSix.setVisibility(View.VISIBLE);
@@ -144,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
         optionSeven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(chance == 1)
+                if (chance == 1)
                     crossSeven.setVisibility(View.VISIBLE);
                 else
                     circleSeven.setVisibility(View.VISIBLE);

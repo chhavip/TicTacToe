@@ -27,7 +27,7 @@
             android:layout_height="50dp"
             android:visibility="invisible"
             android:id="@+id/circle_one"
-            android:src="@drawable/circlenew"
+            android:src="@drawable/circlefinal"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -58,7 +58,7 @@
             android:visibility="invisible"
             android:layout_height="50dp"
             android:id="@+id/circle_two"
-            android:src="@drawable/circlenew"
+            android:src="@drawable/circlefinal"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -88,7 +88,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/circle_three"
-            android:src="@drawable/circlenew"
+            android:src="@drawable/circlefinal"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:visibility="invisible"
@@ -130,7 +130,7 @@
                 android:layout_height="50dp"
                 android:visibility="invisible"
                 android:id="@+id/circle_four"
-                android:src="@drawable/circlenew"
+                android:src="@drawable/circlefinal"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -162,7 +162,7 @@
                 android:layout_height="50dp"
                 android:visibility="invisible"
                 android:id="@+id/circle_five"
-                android:src="@drawable/circlenew"
+                android:src="@drawable/circlefinal"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -194,7 +194,7 @@
                 android:layout_height="50dp"
                 android:visibility="invisible"
                 android:id="@+id/circle_six"
-                android:src="@drawable/circlenew"
+                android:src="@drawable/circlefinal"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -236,7 +236,7 @@
                 android:layout_height="50dp"
                 android:visibility="invisible"
                 android:id="@+id/circle_seven"
-                android:src="@drawable/circlenew"
+                android:src="@drawable/circlefinal"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -268,7 +268,7 @@
                 android:layout_height="50dp"
                 android:visibility="invisible"
                 android:id="@+id/circle_eight"
-                android:src="@drawable/circlenew"
+                android:src="@drawable/circlefinal"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -300,7 +300,7 @@
                 android:layout_height="50dp"
                 android:visibility="invisible"
                 android:id="@+id/circle_nine"
-                android:src="@drawable/circlenew"
+                android:src="@drawable/circlefinal"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />

@@ -10,21 +10,43 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.chhavi.tictactoe.MainActivity">
-    <include layout="@layout/horizontal_line"
+    <include layout="@layout/vertical_line"
         android:id="@+id/horizontal_first"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"></include>
+
+    <include layout="@layout/vertical_line"
+        android:id="@+id/horizontal_second"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"></include>
+
+    <include layout="@layout/vertical_line"
+        android:id="@+id/horizontal_third"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"></include>
+
+
+    <include layout="@layout/horizontal_line"
+        android:id="@+id/vertical_first"
         android:layout_height="match_parent"
         android:layout_width="5dp"
         android:layout_marginLeft="60dp"
         android:layout_alignParentLeft="true">
     </include>
     <include layout="@layout/horizontal_line"
-        android:id="@+id/horizontal_second"
+        android:id="@+id/vertical_second"
         android:layout_height="match_parent"
         android:layout_width="5dp"
         android:layout_marginLeft="160dp"
         android:layout_alignParentLeft="true"/>
     <include layout="@layout/horizontal_line"
-        android:id="@+id/horizontal_third"
+        android:id="@+id/vertical_third"
         android:layout_height="match_parent"
         android:layout_width="5dp"
         android:layout_marginRight="65dp"

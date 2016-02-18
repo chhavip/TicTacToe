@@ -1,5 +1,9 @@
 package com.chhavi.tictactoe;
 
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -76,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     int seven = 0;
     int eight = 0;
     int nine = 0;
-
+    Canvas canvas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +88,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
 
+
+        Bitmap bitmap = Bitmap.createBitmap((int) getWindowManager()
+                .getDefaultDisplay().getWidth(), (int) getWindowManager()
+                .getDefaultDisplay().getHeight(), Bitmap.Config.ARGB_8888);
+            canvas = new Canvas(bitmap);
+
         chance = 1;
+
+
         optionOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +104,14 @@ public class MainActivity extends AppCompatActivity {
                     if (chance == 1) {
                         crossOne.setVisibility(View.VISIBLE);
                         one = 1;
+                        Paint paint = new Paint();
+                        paint.setColor(Color.rgb(255, 153, 51));
+                        paint.setStrokeWidth(10);
+                        int startx = 50;
+                        int starty = 90;
+                        int endx = 150;
+                        int endy = 360;
+                        canvas.drawLine(startx, starty, endx, endy, paint);
                     } else {
                         circleOne.setVisibility(View.VISIBLE);
                         one = 2;
@@ -123,10 +143,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (three == 0) {
-                    if (chance == 1)
+                    if (chance == 1) {
                         crossThree.setVisibility(View.VISIBLE);
-                    else
+                        three = 1;
+                    } else {
                         circleThree.setVisibility(View.VISIBLE);
+                        three = 2;
+                    }
                     chance = 1 - chance;
                 }
             }
@@ -136,10 +159,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (four == 0) {
-                    if (chance == 1)
+                    if (chance == 1) {
                         crossFour.setVisibility(View.VISIBLE);
-                    else
+                        four = 1;
+                    } else {
                         circleFour.setVisibility(View.VISIBLE);
+                        four = 2;
+                    }
                     chance = 1 - chance;
                 }
             }
@@ -149,11 +175,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (five == 0) {
-                    if (chance == 1)
+                    if (chance == 1) {
                         crossFive.setVisibility(View.VISIBLE);
-                    else
+                        five = 1;
+                    }else {
                         circleFive.setVisibility(View.VISIBLE);
-                    chance = 1 - chance;
+                        five = 2;
+                    }  chance = 1 - chance;
 
                 }
             }
@@ -163,10 +191,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(six == 0) {
-                    if (chance == 1)
+                    if (chance == 1) {
                         crossSix.setVisibility(View.VISIBLE);
-                    else
+                        six = 1;
+                    }
+                    else {
                         circleSix.setVisibility(View.VISIBLE);
+                        six = 2;
+                    }
                     chance = 1 - chance;
                 }
             }
@@ -176,10 +208,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(seven == 0) {
-                    if (chance == 1)
+                    if (chance == 1) {
                         crossSeven.setVisibility(View.VISIBLE);
-                    else
+                        seven = 1;
+                    }
+                    else {
                         circleSeven.setVisibility(View.VISIBLE);
+                        seven = 2;
+                    }
                     chance = 1 - chance;
                 }
             }
@@ -189,10 +225,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(eight == 0) {
-                    if (chance == 1)
+                    if (chance == 1) {
                         crossEight.setVisibility(View.VISIBLE);
-                    else
+                        eight = 1;
+                    }
+                    else {
                         circleEight.setVisibility(View.VISIBLE);
+                        eight = 2;
+                    }
                     chance = 1 - chance;
                 }
             }
@@ -202,10 +242,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(nine == 0) {
-                    if (chance == 1)
+                    if (chance == 1) {
                         crossNine.setVisibility(View.VISIBLE);
-                    else
+                        nine = 1;
+                    }
+                    else {
                         circleNine.setVisibility(View.VISIBLE);
+                        nine = 2;
+                    }
                     chance = 1 - chance;
                 }
             }

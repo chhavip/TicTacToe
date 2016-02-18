@@ -69,6 +69,20 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout optionEight;
     @InjectView(R.id.option_nine)
     RelativeLayout optionNine;
+    @InjectView(R.id.horizontal_first)
+    View horizontalLineOne;
+    @InjectView(R.id.horizontal_second)
+    View horizontalLineTwo;
+    @InjectView(R.id.horizontal_third)
+    View horizontalLineThree;
+    @InjectView(R.id.vertical_first)
+    View verticalFirst;
+    @InjectView(R.id.vertical_second)
+    View verticalSecond;
+    @InjectView(R.id.vertical_third)
+    View verticalThird;
+
+
 
     int chance;
     int one = 0;
@@ -87,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
+
+        setLinesInvisible();
 
 
         Bitmap bitmap = Bitmap.createBitmap((int) getWindowManager()
@@ -254,5 +270,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    void setLinesInvisible(){
+        verticalFirst.setVisibility(View.INVISIBLE);
+        verticalSecond.setVisibility(View.INVISIBLE);
+        verticalThird.setVisibility(View.INVISIBLE);
+        horizontalLineOne.setVisibility(View.INVISIBLE);
+        horizontalLineTwo.setVisibility(View.INVISIBLE);
+        horizontalLineThree.setVisibility(View.INVISIBLE);
+    }
+
+    boolean gameWon(){
+        
+
+        return false;
     }
 }

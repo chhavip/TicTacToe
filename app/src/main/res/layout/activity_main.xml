@@ -15,21 +15,21 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"></include>
+        android:layout_marginTop="90dp"></include>
 
     <include layout="@layout/vertical_line"
         android:id="@+id/horizontal_second"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="250dp"></include>
+        android:layout_marginTop="230dp"></include>
 
     <include layout="@layout/vertical_line"
         android:id="@+id/horizontal_third"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="70dp"></include>
+        android:layout_marginBottom="90dp"></include>
 
 
     <include layout="@layout/horizontal_line"
